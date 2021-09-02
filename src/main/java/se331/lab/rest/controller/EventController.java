@@ -28,7 +28,7 @@ public class EventController {
         responseHeader.set("x-total-count",String.valueOf(pageOutput.getTotalElements()));
         return new ResponseEntity<>(pageOutput.getContent(),responseHeader,HttpStatus.OK);
     }
-
+//test
     @GetMapping("events/{id}")
     public ResponseEntity<?> getEvent(@PathVariable("id") Long id) {
 
